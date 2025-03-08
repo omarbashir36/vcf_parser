@@ -1,0 +1,91 @@
+# إنشاء ملف VCF جديد ببيانات جهات الاتصال المحددة
+
+vcf_content_yemen = """\
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:أبو سرهد - تعز
+
+TEL;TYPE=CELL:777200107
+
+END:VCARD
+
+
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:أبو سرهد - إب
+
+TEL;TYPE=CELL:776010304
+
+END:VCARD
+
+
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:أبو سرهد - ذمار
+
+TEL;TYPE=CELL:776010306
+
+END:VCARD
+
+
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:أبو سرهد - صنعاء
+
+TEL;TYPE=CELL:776010301
+
+END:VCARD
+
+
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:أبو سرهد - الرياض
+
+TEL;TYPE=CELL:+966501250404
+
+END:VCARD
+
+
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:أبو سرهد - استفسارات الرحلات (واتس اب)
+
+TEL;TYPE=CELL:+967774880893
+
+END:VCARD
+
+"""
+
+
+
+# حفظ المحتوى في ملف VCF جديد
+
+vcf_file_path_yemen = "/mnt/data/abu_sarhad_yemen_contacts.vcf"
+
+with open(vcf_file_path_yemen, "w", encoding="utf-8") as vcf_file:
+
+    vcf_file.write(vcf_content_yemen)
+
+
+
+# إرجاع مسار الملف
+
+vcf_file_path_yemen
